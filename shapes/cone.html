@@ -1,0 +1,50 @@
+<section class="mt-4">
+  <label for="radius" class="form-label">شعاع سطح مقطع (متر)</label>
+  <input
+    type="number"
+    min="0"
+    class="form-control form-control-lg"
+    id="radius"
+    placeholder="ex: 5.5" />
+</section>
+<section class="mt-4">
+  <label for="height" class="form-label">ارتفاع (متر)</label>
+  <input
+    type="number"
+    min="0"
+    class="form-control form-control-lg"
+    id="height"
+    placeholder="ex: 27.2" />
+</section>
+<hr />
+<section class="container text-center mt-4">
+  <div class="row gap-3">
+    <div class="col p-0 d-flex flex-column justify-content-end">
+      <p>حجم</p>
+      <div>
+        <div class="alert alert-success py-2 mb-1 border-0">
+          <my-formula evaluator="pi*(radius**2)*height/3" />
+        </div>
+        <p class="unit">متر مکعب</p>
+      </div>
+    </div>
+    <div class="col p-0 d-flex flex-column justify-content-end">
+      <p>مساحت جانبی</p>
+      <div>
+        <div class="alert alert-success py-2 mb-1 border-0">
+          <my-formula evaluator="pi*radius*((radius**2+height**2)**0.5)" />
+        </div>
+        <p class="unit">متر مربع</p>
+      </div>
+    </div>
+    <div class="col p-0 d-flex flex-column justify-content-end">
+      <p>مساحت کل</p>
+      <div>
+        <div class="alert alert-success py-2 mb-1 border-0">
+          <my-formula evaluator="pi*radius*((radius**2+height**2)**0.5) + pi*(radius**2)" />
+        </div>
+        <p class="unit">متر مربع</p>
+      </div>
+    </div>
+  </div>
+</section>
