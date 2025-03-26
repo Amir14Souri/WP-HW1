@@ -1,0 +1,72 @@
+:root {
+  --grey: #adb6c4;
+  /* --blue-bg: linear-gradient(to right, #001b2080, #001b2e 10%, #001b2e 90%, #001b2080); */
+  --dark-blue: #001b2e;
+  --dark-blue-low-opacity: #001b2ec8;
+  --cream: #ffc49b;
+  --green: #679436;
+}
+
+body {
+  background-color: var(--grey);
+  font-family: "Vazirmatn";
+  font-weight: 500;
+}
+
+div.card {
+  color: var(--cream);
+  background: var(--dark-blue);
+  box-shadow: 0 0 10px 0 #001b2e;
+}
+
+.card-body {
+  min-width: 35vw;
+}
+
+.alert {
+  font-weight: bold;
+  color: var(--dark-blue);
+  background-color: var(--green);
+}
+
+.form-control {
+  background-color: var(--grey);
+  border-color: var(--grey);
+  color: var(--dark-blue);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  background-color: #8ca1c6;
+  border-color: #8ca1c6;
+}
+
+.form-control::placeholder {
+  color: var(--dark-blue-low-opacity);
+}
+
+hr {
+  background-color: var(--green);
+  border-color: var(--green);
+  border-width: 3px;
+  opacity: 1;
+}
+
+.unit {
+  font-size: 14px;
+  color: var(--green);
+}
+
+.form-select {
+  background-color: var(--dark-blue);
+  border-color: var(--green);
+  border-width: 2px;
+  color: var(--cream);
+  font-size: 24px;
+  width: fit-content;
+}
+
+.form-select:focus {
+  border-color: var(--green);
+  box-shadow: none;
+}
